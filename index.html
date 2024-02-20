@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Desafío Encriptador</title>
+    <link rel="shortcut icon" href="imagenes/Security.png" type="image/pgn">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-logo">
+            <h1><img src="imagenes/Logo.png" alt="Logo"></h1>
+        </div>
+    </header>
+    <main>
+        <section class="principal">
+            <form>
+                <textarea class="texto-entrada" id="texto" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="notificacion-botones">
+                    <span class="notificacion"><iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon>
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </span>
+                    <input class="btn-encriptar" id="btn-encriptar" type="button" value="Encriptar">
+                    <input class="btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+                </div>
+            </form>
+            <div class="botones-encriptacion"></div>
+        </section>
+        <section class="resultado">
+            <div class="texto-procesado-off" id="texto-procesado-off">
+                <img src="imagenes/Muñeco.png" alt="Muñeco">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingrese el texto que desee encriptar o desencriptar.</p>
+            </div>
+            <div class="texto-procesado" id="texto-procesado">
+                <p id="texto-procesado-p"></p>
+                <button id="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
